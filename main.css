@@ -1,5 +1,5 @@
 body{
-    font-family: 'Abril Fatface','Fontin' sans-serif;
+    font-family: 'Abril Fatface','Raleway','Fontin' sans-serif;
     background: #880000;
     background: #7C5852;
     background: #6F4E37;
@@ -13,18 +13,28 @@ h1{
 .margin{
     margin-left: 5%;
 }
+h2{
+    color: #C68E17;
+    font-size: 24px;
+    font-family: 'Raleway','Abril Fatface','Fontin' sans-serif;
+}
 h3{
     color: aliceblue;
 }
+h4{
+    color:#C68E17;
+    font-size: 22px;
+}
+
 .middle{
     padding: 20px;
     border-radius: 25px;
     border: 2px solid aliceblue;
-    height: 450px;
+    height: 460px;
 }
 .first{
     margin-left:2.5%;
-    width:29%;
+    width:34%;
     border-radius: 25px;
     border: 2px solid aliceblue;
     display:inline-block;
@@ -32,7 +42,7 @@ h3{
 }
 .second{
     margin-left:2.5%;
-    width:29%;
+    width:34%;
     border-radius: 25px;
     border: 2px solid aliceblue;
     display:inline-block;
@@ -40,10 +50,33 @@ h3{
 }
 .third{
     margin-left:2.5%;
-    width:29%;
+    width:19%;
     margin-right:2.5%; 
     border-radius: 25px;
     border: 2px solid aliceblue;
     display:inline-block;
     height: 450px;
+}
+ul{
+    list-style-type:square;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 30px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.items{
+    text-align: center;
 }
