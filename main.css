@@ -1,0 +1,19 @@
+body{
+    font-family: 'Abril Fatface','Fontin' sans-serif;
+    background: #880000;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1{
+    color: aliceblue;
+    font-size: 64px;
+}
+h3{
+    color: aliceblue;
+}
+.main{
+    width: 100%;
+}
+.middle{
+    
+}
