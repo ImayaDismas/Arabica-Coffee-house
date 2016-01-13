@@ -1,19 +1,49 @@
 body{
     font-family: 'Abril Fatface','Fontin' sans-serif;
     background: #880000;
-    margin-left: 10%;
-    margin-right: 10%;
+    background: #7C5852;
+    background: #6F4E37;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 h1{
     color: aliceblue;
     font-size: 64px;
 }
+.margin{
+    margin-left: 5%;
+}
 h3{
     color: aliceblue;
 }
-.main{
-    width: 100%;
-}
 .middle{
-    
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid aliceblue;
+    height: 450px;
+}
+.first{
+    margin-left:2.5%;
+    width:29%;
+    border-radius: 25px;
+    border: 2px solid aliceblue;
+    display:inline-block;
+    height: 450px;
+}
+.second{
+    margin-left:2.5%;
+    width:29%;
+    border-radius: 25px;
+    border: 2px solid aliceblue;
+    display:inline-block;
+    height: 450px;
+}
+.third{
+    margin-left:2.5%;
+    width:29%;
+    margin-right:2.5%; 
+    border-radius: 25px;
+    border: 2px solid aliceblue;
+    display:inline-block;
+    height: 450px;
 }
