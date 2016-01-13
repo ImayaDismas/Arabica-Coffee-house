@@ -49,10 +49,13 @@ h4{
     height: 450px;
 }
 .third{
+    border-radius: 25px;
+    background: url(tables.jpg);
+    background-position: left top;
+    background-repeat:no-repeat;
     margin-left:2.5%;
     width:19%;
-    margin-right:2.5%; 
-    border-radius: 25px;
+    margin-right:2.5%;
     border: 2px solid aliceblue;
     display:inline-block;
     height: 450px;
@@ -80,56 +83,65 @@ ul{
 .items{
     text-align: center;
 }
-#cf2 {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-}
-#cf2 img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
 
-#cf2 img.transparent {
-  opacity:0;
+.margin{
+    margin-left: 5%;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
-@keyframes cf2FadeInOut {
-  0% {
-    opacity:1;
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
   }
-  17% {
-    opacity:1;
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
-  25% {
-    opacity:0;
+   from {
+    margin-left: 100%;
+    width: 300%; 
   }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
-#cf2 img:nth-of-type(1) {
-  animation-delay: 6s;
+/*fading in of the sections of the page*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
 }
-#cf2 img:nth-of-type(2) {
-  animation-delay: 4s;
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
 }
-#cf2 img:nth-of-type(3) {
-  animation-delay: 2s;
+
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
 }
-#cf2 img:nth-of-type(4) {
-  animation-delay: 0;
-}
-.bottom,
-.top{
-    width:19%;
-    height: 450px;
+
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
 }
