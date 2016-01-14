@@ -149,3 +149,60 @@ animation-delay: 1.2s;
 -moz-animation-delay: 1.6s;
 animation-delay: 1.6s;
 }
+.button{
+    width:14%;
+    border-radius: 25px;
+    height: 90px;
+    margin-top: -10%;
+    margin-left: 93%;
+    text-align: center;
+    font-size: 28px;
+    font-weight:100;
+    animation:blur .75s ease-out infinite;
+    text-shadow:0px 0px 5px aliceblue,0px 0px 7px aliceblue;
+}
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+}
+a {
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+ul li{
+ display: inline-block;
+ position: relative;
+ line-height: 21px;
+ text-align: left;
+    }
+ul li a{
+    
+    display: block;
+    padding: 8px 25px;
+    color: #C68E17;;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: aliceblue;
+    background: #C68E17;
+}
